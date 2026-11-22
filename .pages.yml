@@ -1,0 +1,65 @@
+
+media:
+  input: uploads
+  output: /uploads
+
+content:
+  - name: products
+    label: Katalog Produk
+    type: file
+    path: products.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Nama Produk
+        type: string
+      - name: category
+        label: Kategori
+        type: string
+      - name: grade
+        label: Kelas
+        type: string
+      - name: price
+        label: Harga
+        type: number
+      - name: old_price
+        label: Harga Sebelum Diskon
+        type: number
+      - name: cover_image
+        label: Gambar Sampul
+        type: string
+      - name: symbol
+        label: Simbol
+        type: string
+      - name: eyebrow
+        label: Label Produk
+        type: string
+      - name: url
+        label: Link Produk
+        type: string
+      - name: description
+        label: Deskripsi
+        type: text
+
+  - name: site
+    label: Pengaturan Website
+    type: file
+    path: site.json
+    format: json
+    fields:
+      - name: logo_image
+        label: Logo
+        type: string
+      - name: hero_image
+        label: Gambar Utama
+        type: string
+      - name: hero_title
+        label: Judul Utama
+        type: string
+      - name: hero_description
+        label: Deskripsi Utama
+        type: text
+
+settings:
+  content: true
