@@ -1,44 +1,273 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8f6ef"><meta name="description" content="Worksheet, rangkuman materi, aktivitas digital, dan sumber belajar untuk anak, orang tua, dan guru.">
-<title>TemaniBelajar.id — Belajar, Bermain, dan Bertumbuh Bersama</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f4eb">
+<meta name="description" content="TemaniBelajar.id adalah ruang belajar digital yang menghadirkan sumber belajar, aktivitas, dan inspirasi untuk anak, orang tua, dan guru.">
+<title>TemaniBelajar.id — Belajar dengan Hati, Bertumbuh dengan Ilmu</title>
 <style>
-:root{--forest:#174f40;--green:#287c66;--sage:#dce8dc;--pale:#edf1e8;--cream:#f8f6ef;--paper:#fffefa;--ink:#25352f;--muted:#697970;--orange:#d97942;--yellow:#f2d77a;--line:#e7e5dc;--shadow:0 18px 50px #20392b0d;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.container{width:min(1180px,calc(100% - 48px));margin-inline:auto}.topbar{position:sticky;top:0;z-index:20;background:#f8f6efeF;border-bottom:1px solid #e7e5dcaa;backdrop-filter:blur(14px)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:-.04em;color:var(--forest);font-size:20px}.brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}.navlinks{display:flex;gap:34px;color:#42534b;font-size:13px;font-weight:700}.navlinks a:hover,.textlink:hover{color:var(--orange)}.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:99px;padding:13px 20px;background:var(--forest);color:white;font-weight:750;font-size:13px;border:1px solid var(--forest);transition:.2s}.pill:hover{background:var(--green);transform:translateY(-1px)}.pill.secondary{background:transparent;color:var(--forest)}.menu-btn{display:none;border:1px solid var(--line);background:white;border-radius:50%;width:42px;height:42px;font-size:20px;color:var(--forest)}
-.hero{padding:64px 0 76px;display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.19em;font-weight:850;color:var(--orange)}h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--serif);font-weight:600;letter-spacing:-.045em;font-size:clamp(46px,5.4vw,72px);line-height:1.02;margin:20px 0 22px;max-width:620px}.hero h1 em{font-style:italic;color:var(--green)}.hero-copy{max-width:520px;font-size:16px;line-height:1.85;color:var(--muted);margin-bottom:26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{font-size:11px;color:#87928b;margin-top:22px;letter-spacing:.02em}.hero-visual{position:relative}.hero-visual:before{content:"";position:absolute;inset:8% -5% -5% 8%;border-radius:46% 46% 22px 22px;background:#e7eddf}.hero-visual img{position:relative;display:block;width:100%;aspect-ratio:1.2/1;object-fit:cover;object-position:center;border-radius:34px;box-shadow:var(--shadow)}
-.section{padding:58px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:26px}.section-head h2{font-family:var(--serif);font-weight:600;letter-spacing:-.035em;font-size:clamp(30px,3.5vw,43px);margin:10px 0 8px}.section-head p{max-width:570px;color:var(--muted);line-height:1.75;font-size:14px;margin:0}.textlink{font-size:13px;font-weight:800;color:var(--forest);white-space:nowrap}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;min-height:174px;transition:.2s;display:flex;flex-direction:column}.category-card:hover,.aud-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#cdd9cd}.cat-symbol{height:44px;width:44px;border-radius:14px;display:grid;place-items:center;font-family:var(--serif);font-size:22px;color:var(--forest);background:var(--pale);margin-bottom:18px}.category-card:nth-child(2) .cat-symbol{background:#f8eadb;color:#a75d32}.category-card:nth-child(3) .cat-symbol{background:#f5efd8;color:#856d2a}.category-card:nth-child(4) .cat-symbol{background:#e7edf0;color:#526d78}.category-card h3{font-size:15px;margin:0 0 7px}.category-card p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
-.audience-band{background:#eaf0e7;border-block:1px solid #dfe7dc}.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.aud-card{border:1px solid #dbe4d8;background:#f8f8f1;border-radius:18px;padding:24px;min-height:150px;transition:.2s}.aud-card .number{font-family:var(--serif);font-size:30px;color:#a4b7a2}.aud-card h3{font-family:var(--serif);font-size:22px;margin:10px 0 6px}.aud-card p{font-size:12px;color:var(--muted);margin:0;line-height:1.6}
-.featured-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:11px;display:flex;flex-direction:column;min-width:0;transition:.2s}.product-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.product-art{height:190px;border-radius:12px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;background:linear-gradient(145deg,#e7eee3,#cbdccc);color:var(--forest)}.product-art:after{content:"";position:absolute;width:150px;height:150px;border:1px solid currentColor;border-radius:50%;right:-46px;bottom:-62px;opacity:.17;box-shadow:0 0 0 16px #ffffff16,0 0 0 34px #ffffff12}.product-art[data-tone="1"]{background:linear-gradient(145deg,#f8e9d7,#edc9a7);color:#794a2d}.product-art[data-tone="2"]{background:linear-gradient(145deg,#e8edf1,#cbd8dd);color:#365b68}.product-art[data-tone="3"]{background:linear-gradient(145deg,#f4edcf,#e9d98c);color:#766128}.product-art[data-tone="4"]{background:linear-gradient(145deg,#f0e5e6,#dfc7d0);color:#744c5d}.art-kicker{font-size:8px;letter-spacing:.16em;font-weight:900;position:relative;z-index:1}.art-mark{font-family:var(--serif);font-size:54px;line-height:1;align-self:flex-end;position:relative;z-index:1}.art-title{font-family:var(--serif);font-size:19px;line-height:1.08;max-width:90%;position:relative;z-index:1}.product-info{padding:13px 5px 5px;display:flex;flex-direction:column;flex:1}.product-category{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);font-weight:850;margin-bottom:8px}.product-info h3{font-size:14px;line-height:1.45;margin:0 0 10px;min-height:40px}.price-line{margin-top:auto;display:flex;align-items:baseline;gap:8px;font-weight:850;font-size:14px}.price-line del{font-size:11px;color:#9aa39d;font-weight:500}.product-link{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:13px;padding:12px 5px 2px;font-size:11px;font-weight:850;color:var(--forest)}.all-products{margin-top:25px;text-align:center}.all-products .pill{min-width:190px}
-.shop-tools{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 22px}.shop-tools input,.shop-tools select{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:12px 15px;color:var(--ink);font-size:12px}.shop-tools input{min-width:230px;flex:1}.shop-tools select{min-width:160px}.shop-count{align-self:center;margin-left:auto;font-size:11px;color:var(--muted)}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.product-grid .product-art{height:155px}.why{background:#f0eee4}.why-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:center}.why h2{font-family:var(--serif);font-size:clamp(32px,4vw,48px);font-weight:600;line-height:1.1;letter-spacing:-.035em;margin:12px 0}.why-intro{color:var(--muted);font-size:14px;line-height:1.8}.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.benefit{background:#fbfaf5;border:1px solid #e4e3d9;border-radius:15px;padding:18px}.benefit b{font-family:var(--serif);font-size:17px}.benefit p{font-size:11px;color:var(--muted);line-height:1.6;margin:7px 0 0}.closing{padding:62px 0}.closing-panel{background:var(--forest);color:white;border-radius:24px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px;overflow:hidden;position:relative}.closing-panel:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #ffffff26;border-radius:50%;right:12%;top:-190px;box-shadow:0 0 0 30px #ffffff08,0 0 0 60px #ffffff08}.closing-panel h2{font-family:var(--serif);font-size:clamp(28px,3.6vw,42px);font-weight:500;margin:8px 0}.closing-panel p{font-size:13px;color:#d6e2d9;margin:0;line-height:1.7}.closing-panel .pill{background:#f3d981;color:#274536;border-color:#f3d981;position:relative;z-index:1;white-space:nowrap}footer{border-top:1px solid var(--line);padding:30px 0 38px;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-weight:850;color:var(--forest);font-size:15px}.footer-links{display:flex;gap:18px;flex-wrap:wrap}
-.hidden{display:none!important}.empty{color:var(--muted);font-size:13px;padding:24px 0}@media(max-width:900px){.hero{gap:30px}.category-grid,.featured-grid,.product-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr;gap:24px}.product-art{height:175px}}@media(max-width:620px){.container{width:min(100% - 32px,500px)}.nav{height:68px}.brand{font-size:17px}.brand img{width:42px;height:42px}.navlinks,.nav-cta{display:none}.menu-btn{display:block}.hero{grid-template-columns:1fr;padding:30px 0 46px;gap:26px}.hero h1{font-size:48px;margin:14px 0}.hero-copy{font-size:14px}.hero-visual img{aspect-ratio:1.2/1;border-radius:23px}.section{padding:42px 0}.section-head{display:block}.section-head .textlink{display:inline-block;margin-top:15px}.category-grid{gap:9px}.category-card{padding:16px;min-height:160px}.audience-grid{grid-template-columns:1fr}.aud-card{min-height:120px;padding:18px}.featured-grid,.product-grid{gap:9px}.product-card{padding:8px;border-radius:14px}.product-art{height:145px;padding:12px}.art-title{font-size:16px}.art-mark{font-size:42px}.product-info{padding:11px 3px 3px}.product-info h3{font-size:12px;min-height:52px}.price-line{font-size:12px}.product-link{font-size:10px}.shop-tools{display:grid;grid-template-columns:1fr 1fr}.shop-tools input{grid-column:1/-1;min-width:0}.shop-tools select{min-width:0;width:100%}.shop-count{grid-column:1/-1;margin:0}.benefits{gap:8px}.benefit{padding:14px}.closing-panel{padding:28px 22px;display:block}.closing-panel .pill{margin-top:20px}.footer-inner{display:block}.footer-links{margin-top:14px}}
+:root{
+ --forest:#174f40;--green:#287c66;--deep:#173c32;--sage:#e7eee3;--sage2:#d6e3d2;
+ --cream:#faf7f0;--paper:#fffdf8;--peach:#f5e1d0;--butter:#f4e6ad;
+ --ink:#24352f;--muted:#687a70;--line:#e8e1d5;--orange:#d8753d;
+ --serif:Georgia,"Times New Roman",serif;
+ --sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+ --shadow:0 24px 70px rgba(36,53,47,.10)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1180px,calc(100% - 52px));margin:auto}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(250,247,240,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,225,213,.8)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--forest);font-weight:850;font-size:20px;letter-spacing:-.045em}
+.brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}
+.navlinks{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:750;color:#43564d}
+.navlinks a:hover,.footer-links a:hover{color:var(--orange)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:99px;padding:14px 21px;background:var(--forest);color:white;font-size:13px;font-weight:800;transition:.2s}
+.nav-cta:hover,.btn:hover{background:var(--green);transform:translateY(-2px)}
+.btn.light{background:var(--paper);color:var(--forest);border:1px solid var(--line)}
+.btn.light:hover{border-color:var(--sage2);background:white}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);background:var(--paper);border-radius:50%;color:var(--forest);font-size:20px}
+.mobile-nav{display:none;padding:0 0 18px}
+.mobile-nav a{display:block;padding:12px 4px;border-top:1px solid var(--line);font-size:14px;font-weight:700}
+.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);font-weight:900}
+h1,h2,h3,p{margin-top:0}
+.hero{padding:74px 0 88px;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:58px;align-items:center;min-height:610px}.hero-copy,.hero-art{min-width:0}
+.hero-copy{position:relative;z-index:1}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--forest);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.hero-kicker:before{content:"";width:28px;height:1px;background:var(--orange)}
+.hero h1{font:600 clamp(48px,6vw,76px)/.99 var(--serif);letter-spacing:-.052em;max-width:650px;margin:22px 0}
+.hero h1 em{color:var(--green);font-weight:500}
+.hero-desc{max-width:510px;color:var(--muted);font-size:16px;line-height:1.9;margin-bottom:28px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-signature{margin-top:30px;color:#87948b;font:italic 13px var(--serif)}
+.hero-art{position:relative;padding:0 0 24px 22px}
+.hero-art:before{content:"";position:absolute;inset:9% -4% -1% 12%;background:var(--sage);border-radius:48% 48% 30px 30px;transform:rotate(2deg)}
+.hero-art:after{content:"";position:absolute;width:110px;height:110px;border:1px solid #d6a77c;border-radius:50%;right:-22px;top:-28px;opacity:.65}
+.hero-art img{position:relative;z-index:1;display:block;width:100%;max-width:100%;height:440px;object-fit:cover;object-position:center;border-radius:44% 44% 22px 22px;box-shadow:var(--shadow)}
+.hero-caption{position:absolute;z-index:2;bottom:0;left:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:13px 17px;box-shadow:var(--shadow);font:italic 15px var(--serif);color:var(--forest)}
+.hero-caption small{display:block;font:800 9px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:5px}
+.section{padding:86px 0}
+.section-head{max-width:720px;margin-bottom:38px}
+.section-head h2{font:600 clamp(34px,4.2vw,52px)/1.06 var(--serif);letter-spacing:-.04em;margin:13px 0}
+.section-head p{font-size:15px;line-height:1.85;color:var(--muted);margin:0;max-width:650px}
+.story{background:#f1e9dc;position:relative;overflow:hidden}
+.story:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #d6c7b2;border-radius:50%;right:-180px;top:-190px;box-shadow:0 0 0 28px #ffffff1c,0 0 0 58px #ffffff15}
+.story-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:center;position:relative;z-index:1}
+.story-mark{background:var(--sage);border-radius:46% 46% 18px 18px;min-height:360px;display:grid;place-items:center;position:relative;overflow:hidden}
+.story-mark img{width:170px;height:170px;object-fit:contain;filter:drop-shadow(0 12px 18px #173c3218)}
+.story-mark:before,.story-mark:after{content:"";position:absolute;border:1px solid #a9bea8;border-radius:50%;width:280px;height:280px}
+.story-mark:after{width:360px;height:360px}
+.story-copy h2{font:600 clamp(36px,4.2vw,52px)/1.05 var(--serif);letter-spacing:-.04em;margin:14px 0 20px}
+.story-copy p{color:#63746a;font-size:15px;line-height:1.95;margin:0 0 14px}
+.text-link{display:inline-flex;align-items:center;gap:8px;color:var(--forest);font-size:13px;font-weight:850;margin-top:12px}
+.text-link:hover{color:var(--orange)}
+.philosophy{background:var(--paper)}
+.philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.philo{padding:28px 27px 30px;border:1px solid var(--line);border-radius:20px;background:var(--cream);min-height:218px}
+.philo-num{font:italic 28px var(--serif);color:#9caf98}
+.philo h3{font:600 23px var(--serif);margin:20px 0 10px}
+.philo p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.ecosystem{background:var(--sage);border-block:1px solid #dbe5d7}
+.ecosystem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.eco{background:rgba(255,253,248,.76);border:1px solid #d8e2d5;border-radius:18px;padding:23px;min-height:195px;transition:.2s}
+.eco:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.eco-symbol{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:var(--peach);color:var(--forest);font:24px var(--serif);margin-bottom:22px}
+.eco:nth-child(2) .eco-symbol{background:#f4e8b8}
+.eco:nth-child(3) .eco-symbol{background:#dce8df}
+.eco:nth-child(4) .eco-symbol{background:#eadde2}
+.eco h3{font:600 20px var(--serif);margin:0 0 8px}
+.eco p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}
+.partners{background:var(--cream)}
+.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.partner{padding:27px;border:1px solid var(--line);border-radius:20px;background:var(--paper);min-height:220px;position:relative;overflow:hidden}
+.partner:after{content:"";position:absolute;width:150px;height:150px;border:1px solid #d9e3d6;border-radius:50%;right:-60px;bottom:-75px;box-shadow:0 0 0 16px #e9efe522,0 0 0 34px #e9efe522}
+.partner .num{font:italic 30px var(--serif);color:#a5b7a0}
+.partner h3{font:600 25px var(--serif);margin:17px 0 9px}
+.partner p{font-size:13px;line-height:1.8;color:var(--muted);max-width:270px;margin:0}
+.work{background:#f2eadd}
+.work-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+.work-intro h2{font:600 clamp(36px,4vw,50px)/1.05 var(--serif);letter-spacing:-.04em;margin:13px 0}
+.work-intro p{font-size:14px;line-height:1.9;color:var(--muted)}
+.work-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.work-card{background:var(--paper);border:1px solid #e7ddcf;border-radius:18px;padding:12px;min-width:0}
+.work-cover{min-height:205px;border-radius:12px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#e5eee2,#cbdccc);color:#174f40}
+.work-card:nth-child(2) .work-cover{background:linear-gradient(145deg,#f7e6d5,#e9c7a8);color:#754a30}
+.cover-top{font-size:8px;letter-spacing:.17em;font-weight:900}
+.cover-mark{align-self:flex-end;font:58px/1 var(--serif)}
+.cover-title{font:22px/1.08 var(--serif);max-width:90%}
+.work-meta{padding:14px 5px 5px}
+.work-meta small{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);font-weight:900}
+.work-meta h3{font:600 17px/1.35 var(--serif);margin:7px 0}
+.work-meta p{font-size:11px;color:var(--muted);line-height:1.6;margin:0}
+.work-note{grid-column:1/-1;font-size:11px;color:#7c887f;margin-top:4px}
+.cta{padding:76px 0}
+.cta-panel{background:var(--forest);border-radius:26px;padding:52px;display:flex;align-items:center;justify-content:space-between;gap:30px;color:white;position:relative;overflow:hidden}
+.cta-panel:after{content:"";position:absolute;width:380px;height:380px;border:1px solid #ffffff24;border-radius:50%;right:15%;top:-245px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff08}
+.cta-panel h2{font:600 clamp(32px,4vw,48px)/1.05 var(--serif);letter-spacing:-.035em;margin:12px 0}
+.cta-panel p{font-size:14px;color:#d9e5dd;line-height:1.8;margin:0;max-width:570px}
+.cta-panel .btn{background:var(--butter);color:var(--deep);position:relative;z-index:1;white-space:nowrap}
+footer{border-top:1px solid var(--line);padding:34px 0 40px;background:var(--cream)}
+.footer-main{display:flex;align-items:flex-start;justify-content:space-between;gap:35px}
+.footer-brand{display:flex;align-items:center;gap:12px;color:var(--forest);font-weight:850;font-size:18px}
+.footer-brand img{width:46px;height:46px;object-fit:contain;border-radius:50%}
+.footer-note{font:italic 14px var(--serif);color:var(--muted);margin:12px 0 0}
+.footer-links{display:flex;gap:22px;flex-wrap:wrap;font-size:12px;font-weight:750;color:#52635a}
+.copyright{border-top:1px solid var(--line);margin-top:28px;padding-top:18px;color:#89948c;font-size:10px;display:flex;justify-content:space-between;gap:16px}
+@media(max-width:900px){
+ .hero{gap:34px}.hero-art img{height:380px}.ecosystem-grid{grid-template-columns:repeat(2,1fr)}
+ .story-grid,.work-layout{grid-template-columns:1fr;gap:35px}.story-mark{min-height:280px}
+}
+@media(max-width:620px){
+ .container{width:calc(100% - 34px)}.nav{height:68px}.brand{font-size:17px}.brand img{width:42px;height:42px}
+ .navlinks,.nav-cta{display:none}.menu-btn{display:block}.mobile-nav[hidden]{display:none}.mobile-nav:not([hidden]){display:block}
+ .hero{grid-template-columns:minmax(0,1fr);padding:48px 0 60px;gap:32px;min-height:0;overflow:visible}.hero-copy,.hero-art{width:100%;min-width:0}.hero h1{font-size:clamp(42px,11vw,52px);max-width:12ch}.hero-desc{font-size:14px;max-width:100%}
+ .hero-art{padding:0 0 18px 8px;margin:0;max-width:100%;overflow:hidden}.hero-art:before{inset:8% -3% 0 10%}.hero-art:after{right:-10px;top:-14px;width:76px;height:76px}.hero-art img{width:100%;height:auto;aspect-ratio:1.18 / 1;max-height:340px;object-fit:cover;object-position:center;border-radius:38% 38% 18px 18px}.hero-caption{left:0;bottom:0;font-size:12px;max-width:88%}
+ .section{padding:62px 0}.section-head{margin-bottom:27px}.section-head h2{font-size:38px}
+ .philosophy-grid,.partner-grid{grid-template-columns:1fr}.philo,.partner{min-height:0}
+ .ecosystem-grid{grid-template-columns:1fr 1fr;gap:9px}.eco{padding:17px;min-height:180px}.eco h3{font-size:17px}
+ .work-cards{gap:9px}.work-cover{min-height:165px;padding:14px}.cover-title{font-size:18px}.cover-mark{font-size:45px}
+ .cta{padding:55px 0}.cta-panel{padding:30px 24px;display:block}.cta-panel .btn{margin-top:22px}
+ .footer-main{display:block}.footer-links{margin-top:24px;gap:14px}.copyright{display:block;line-height:1.8}
+}
+@media(max-width:380px){.hero h1{font-size:42px}.hero-art img{aspect-ratio:1.08 / 1;object-position:center}.ecosystem-grid{grid-template-columns:1fr}.work-cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="container nav"><a class="brand" href="#top"><img src="/logo.png" alt="Logo TemaniBelajar"><span>TemaniBelajar.id</span></a><nav class="navlinks" aria-label="Navigasi utama"><a href="#explore">Explore</a><a href="#featured">Learning Shop</a><a href="#about">About</a></nav><a class="pill nav-cta" href="#all-products">Lihat Produk</a><button class="menu-btn" id="menuBtn" aria-label="Buka navigasi">☰</button></div><div class="container" id="mobileNav" hidden style="padding:0 0 16px;gap:18px"><a href="#explore">Explore</a><a href="#featured">Learning Shop</a><a href="#about">About</a></div></header>
-<main id="top">
-<section class="container hero"><div><div class="eyebrow">A little space for curious minds</div><h1>Belajar, bermain, dan <em>bertumbuh bersama.</em></h1><p class="hero-copy">Worksheet, rangkuman materi, aktivitas digital, dan sumber belajar untuk menemani anak, orang tua, dan guru dalam satu ruang.</p><div class="hero-actions"><a class="pill" href="#featured">Jelajahi Koleksi <span aria-hidden="true">&nbsp;↗</span></a><a class="pill secondary" href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Kunjungi Shop</a></div><div class="hero-note">Untuk proses belajar di rumah maupun di kelas.</div></div><div class="hero-visual"><img src="/hero.png" alt="Meja belajar dengan buku, alat tulis, tanaman, dan laptop"></div></section>
-<section class="container section" id="explore"><div class="section-head"><div><div class="eyebrow">Explore & discover</div><h2>Temukan cara belajar yang tepat.</h2><p>Satu ruang untuk berbagai kebutuhan belajar. Pilih jenis sumber belajar yang sedang kamu cari.</p></div><a class="textlink" href="#all-products">Jelajahi semua produk ↗</a></div><div class="category-grid"><a class="category-card" href="#all-products" data-filter-cat="Worksheet"><div class="cat-symbol">W</div><h3>Worksheets</h3><p>Lembar aktivitas, latihan, dan penguatan materi.</p></a><a class="category-card" href="#all-products" data-filter-cat="Digital Tools"><div class="cat-symbol">↗</div><h3>Interactive & Digital Tools</h3><p>Alat bantu digital untuk pengalaman belajar yang aktif.</p></a><a class="category-card" href="#all-products" data-filter-cat="Games"><div class="cat-symbol">G</div><h3>Games & Activities</h3><p>Aktivitas edukatif untuk belajar sambil mencoba.</p></a><a class="category-card" href="#all-products" data-filter-cat="Rangkuman"><div class="cat-symbol">N</div><h3>Study Notes & Resources</h3><p>Rangkuman, bahan ajar, dan panduan belajar.</p></a></div></section>
-<div class="audience-band"><section class="container section"><div class="section-head"><div><div class="eyebrow">Made for every learning partner</div><h2>Satu ruang, tiga kebutuhan.</h2><p>TemaniBelajar hadir untuk mendukung proses belajar anak, orang tua, dan guru.</p></div></div><div class="audience-grid"><a class="aud-card" href="#all-products"><div class="number">01</div><h3>Untuk Anak</h3><p>Materi dan aktivitas untuk berlatih, memahami, dan berkembang.</p></a><a class="aud-card" href="#all-products"><div class="number">02</div><h3>Untuk Orang Tua</h3><p>Sumber belajar praktis untuk menemani proses belajar di rumah.</p></a><a class="aud-card" href="#all-products"><div class="number">03</div><h3>Untuk Guru</h3><p>Bahan ajar dan ide aktivitas untuk mendukung pembelajaran di kelas.</p></a></div></section></div>
-<section class="container section" id="featured"><div class="section-head"><div><div class="eyebrow">Curated for your learning journey</div><h2>Pilihan TemaniBelajar</h2><p>Mulai dari produk pilihan, lalu temukan koleksi lain sesuai kebutuhan belajar.</p></div><a class="textlink" href="#all-products">Lihat seluruh katalog ↗</a></div><div class="featured-grid" id="featuredGrid"><p class="empty">Memuat produk pilihan…</p></div><div class="all-products"><a class="pill secondary" href="#all-products">Lihat Semua Produk</a></div></section>
-<section class="container section" id="all-products"><div class="section-head"><div><div class="eyebrow">The learning shop</div><h2>Jelajahi seluruh koleksi</h2><p>Cari berdasarkan nama produk, kategori, atau jenjang belajar.</p></div><a class="textlink" href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Toko resmi Lynk ↗</a></div><div class="shop-tools"><input id="searchInput" type="search" placeholder="Cari produk…" aria-label="Cari produk"><select id="categoryFilter" aria-label="Filter kategori"><option value="">Semua kategori</option></select><select id="gradeFilter" aria-label="Filter kelas"><option value="">Semua kelas/tema</option></select><span class="shop-count" id="productCount">Memuat katalog…</span></div><div class="product-grid" id="productGrid"></div><p class="empty hidden" id="emptyState">Produk tidak ditemukan. Coba kata kunci atau kategori lain.</p><p class="hero-note">Harga dan ketersediaan mengikuti informasi terbaru di toko resmi Lynk.id.</p></section>
-<section class="why section" id="about"><div class="container why-grid"><div><div class="eyebrow">The TemaniBelajar approach</div><h2>Belajar lebih terarah, tumbuh dengan percaya diri.</h2><p class="why-intro">Kami percaya proses belajar yang baik dimulai dari sumber yang tepat, penyajian yang jelas, dan pendampingan yang hangat.</p></div><div class="benefits"><div class="benefit"><b>Materi terstruktur</b><p>Sumber belajar disusun agar lebih mudah digunakan sesuai kebutuhan.</p></div><div class="benefit"><b>Visual yang nyaman</b><p>Tampilan dirancang rapi agar informasi mudah dibaca dan dipahami.</p></div><div class="benefit"><b>Praktis dan digital</b><p>Temukan produk belajar dalam satu katalog yang mudah dijelajahi.</p></div><div class="benefit"><b>Dibuat dengan hati</b><p>Menemani anak, orang tua, dan guru dalam perjalanan belajar.</p></div></div></div></section>
-<section class="container closing"><div class="closing-panel"><div><div class="eyebrow" style="color:#f3d981">Grow together</div><h2>Temani setiap langkah belajar.</h2><p>Temukan worksheet, rangkuman, dan aktivitas yang sesuai dengan kebutuhanmu.</p></div><a class="pill" href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Kunjungi Toko ↗</a></div></section>
+<header class="topbar">
+ <div class="container nav">
+  <a class="brand" href="#home" aria-label="TemaniBelajar beranda"><img src="/logo.png" alt="Logo TemaniBelajar"><span>TemaniBelajar.id</span></a>
+  <nav class="navlinks" aria-label="Navigasi utama">
+   <a href="#tentang">Tentang Kami</a><a href="#pendekatan">Pendekatan</a><a href="#ekosistem">Ruang Belajar</a><a href="#karya">Karya Kami</a>
+  </nav>
+  <a class="nav-cta" href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Kunjungi Lynk <span aria-hidden="true">↗</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
+ </div>
+ <nav class="container mobile-nav" id="mobileNav" hidden>
+  <a href="#tentang">Tentang Kami</a><a href="#pendekatan">Pendekatan</a><a href="#ekosistem">Ruang Belajar</a><a href="#karya">Karya Kami</a><a href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Kunjungi Lynk ↗</a>
+ </nav>
+</header>
+
+<main id="home">
+<section class="container hero">
+ <div class="hero-copy">
+  <div class="hero-kicker">A little space for curious minds</div>
+  <h1>Belajar dengan hati, <em>bertumbuh</em> dengan ilmu.</h1>
+  <p class="hero-desc">TemaniBelajar adalah ruang belajar digital yang tumbuh dari kepedulian pada proses belajar anak. Kami menghadirkan sumber belajar dan pengalaman edukatif untuk mendukung anak, orang tua, dan guru.</p>
+  <div class="hero-actions">
+   <a class="btn" href="#tentang">Kenali TemaniBelajar <span aria-hidden="true">→</span></a>
+   <a class="btn light" href="#ekosistem">Jelajahi ruang belajar</a>
+  </div>
+  <div class="hero-signature">Menemani belajar anak dengan hati.</div>
+ </div>
+ <div class="hero-art">
+  <img src="/hero.png" alt="Suasana meja belajar hangat dengan buku, tanaman, pensil, dan laptop">
+  <div class="hero-caption"><small>Our little promise</small>Setiap anak punya perjalanan belajar yang berharga.</div>
+ </div>
+</section>
+
+<section class="story section" id="tentang">
+ <div class="container story-grid">
+  <div class="story-mark"><img src="/logo.png" alt="Identitas TemaniBelajar"></div>
+  <div class="story-copy">
+   <div class="eyebrow">The heart behind the learning</div>
+   <h2>Satu ruang, untuk menemani banyak perjalanan.</h2>
+   <p>TemaniBelajar.id hadir sebagai teman dalam proses belajar—menghadirkan materi, aktivitas, dan alat bantu yang dirancang agar kegiatan belajar terasa lebih terarah, dekat, dan bermakna.</p>
+   <p>Kami percaya bahwa belajar bukan hanya tentang menyelesaikan tugas. Ada rasa ingin tahu yang perlu dirawat, keberanian mencoba yang perlu didukung, dan proses kecil yang layak dirayakan.</p>
+   <a class="text-link" href="#pendekatan">Kenali pendekatan kami <span>→</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="philosophy section" id="pendekatan">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Our learning philosophy</div>
+   <h2>Belajar bukan perlombaan. Ini sebuah perjalanan.</h2>
+   <p>Kami ingin setiap pengalaman belajar terasa lebih dekat dengan kebutuhan, tahap, dan rasa ingin tahu anak.</p>
+  </div>
+  <div class="philosophy-grid">
+   <article class="philo"><div class="philo-num">01</div><h3>Bertahap dan terarah</h3><p>Materi dan aktivitas disusun untuk membantu proses belajar berlangsung selangkah demi selangkah.</p></article>
+   <article class="philo"><div class="philo-num">02</div><h3>Aktif dan bermakna</h3><p>Belajar dapat hadir melalui membaca, mencoba, berlatih, bermain, dan menemukan hal baru.</p></article>
+   <article class="philo"><div class="philo-num">03</div><h3>Tumbuh bersama</h3><p>Anak, orang tua, dan guru punya peran penting dalam menciptakan pengalaman belajar yang positif.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="ecosystem section" id="ekosistem">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">A thoughtful learning ecosystem</div>
+   <h2>Ruang untuk berbagai cara belajar.</h2>
+   <p>TemaniBelajar mengembangkan beragam sumber dan pengalaman edukatif. Bukan satu cara untuk semua, melainkan pilihan yang bisa mendukung perjalanan belajar.</p>
+  </div>
+  <div class="ecosystem-grid">
+   <article class="eco"><div class="eco-symbol">✎</div><h3>Worksheets</h3><p>Lembar aktivitas dan latihan untuk membantu anak memahami materi melalui praktik.</p></article>
+   <article class="eco"><div class="eco-symbol">▤</div><h3>Learning Resources</h3><p>Rangkuman dan bahan belajar yang membantu menyusun pemahaman secara bertahap.</p></article>
+   <article class="eco"><div class="eco-symbol">✧</div><h3>Interactive Tools</h3><p>Alat bantu digital untuk menghadirkan pengalaman belajar yang lebih aktif.</p></article>
+   <article class="eco"><div class="eco-symbol">◇</div><h3>Games & Activities</h3><p>Aktivitas edukatif yang mengajak anak belajar sambil bereksplorasi.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="partners section">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Made for every learning partner</div>
+   <h2>Satu ruang, tiga kebutuhan.</h2>
+   <p>Setiap orang punya peran dalam perjalanan belajar. TemaniBelajar ingin hadir sebagai teman bagi semuanya.</p>
+  </div>
+  <div class="partner-grid">
+   <article class="partner"><div class="num">01</div><h3>Untuk Anak</h3><p>Ruang untuk mencoba, berlatih, bertanya, dan menemukan kesenangan dalam belajar.</p></article>
+   <article class="partner"><div class="num">02</div><h3>Untuk Orang Tua</h3><p>Sumber pendamping yang praktis untuk menemani proses belajar anak di rumah.</p></article>
+   <article class="partner"><div class="num">03</div><h3>Untuk Guru</h3><p>Inspirasi dan sumber belajar untuk mendukung kegiatan pembelajaran di kelas.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="work section" id="karya">
+ <div class="container work-layout">
+  <div class="work-intro">
+   <div class="eyebrow">A glimpse of what we create</div>
+   <h2>Karya kecil untuk perjalanan belajar yang besar.</h2>
+   <p>Mulai dari lembar aktivitas hingga rangkuman dan perangkat digital, setiap karya dibuat untuk mendukung proses belajar dengan cara yang lebih terarah.</p>
+   <a class="text-link" href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Lihat koleksi di toko resmi <span>↗</span></a>
+  </div>
+  <div class="work-cards">
+   <article class="work-card"><div class="work-cover"><span class="cover-top">TEMANIBELAJAR · LEARNING NOTES</span><span class="cover-mark">✎</span><span class="cover-title">Rangkuman Matematika Materi Dasar SD</span></div><div class="work-meta"><small>Learning resources</small><h3>Belajar konsep, selangkah demi selangkah.</h3><p>Contoh karya rangkuman untuk mendukung pemahaman dasar.</p></div></article>
+   <article class="work-card"><div class="work-cover"><span class="cover-top">TEMANIBELAJAR · LANGUAGE</span><span class="cover-mark">ع</span><span class="cover-title">Bahasa Arab SD/MI Kelas 1</span></div><div class="work-meta"><small>Learning materials</small><h3>Mengenal bahasa melalui materi sederhana.</h3><p>Contoh karya bahan belajar untuk tahap awal.</p></div></article>
+   <p class="work-note">Pratinjau karya. Katalog dan transaksi produk tersedia melalui toko resmi TemaniBelajar di Lynk.id.</p>
+  </div>
+ </div>
+</section>
+
+<section class="container cta">
+ <div class="cta-panel">
+  <div><div class="eyebrow" style="color:#f3d981">Continue the learning journey</div><h2>Mari tumbuh bersama.</h2><p>Temukan lebih banyak sumber belajar dan karya TemaniBelajar melalui toko resmi kami.</p></div>
+  <a class="btn" href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Kunjungi Lynk.id <span>↗</span></a>
+ </div>
+</section>
 </main>
-<footer><div class="container footer-inner"><div><div class="footer-brand">TemaniBelajar.id</div><div style="margin-top:6px">Menemani belajar anak dengan hati.</div><div style="margin-top:8px">© 2026 TemaniBelajar.id</div></div><div class="footer-links"><a href="#top">Kembali ke atas</a><a href="#about">Tentang Kami</a><a href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Toko Resmi</a></div></div></footer>
+
+<footer>
+ <div class="container">
+  <div class="footer-main">
+   <div><a class="footer-brand" href="#home"><img src="/logo.png" alt="">TemaniBelajar.id</a><p class="footer-note">Belajar dengan Hati, Bertumbuh dengan Ilmu.</p></div>
+   <nav class="footer-links" aria-label="Navigasi footer"><a href="#tentang">Tentang Kami</a><a href="#pendekatan">Pendekatan</a><a href="#ekosistem">Ruang Belajar</a><a href="#karya">Karya Kami</a><a href="https://lynk.id/temanibelajarid" target="_blank" rel="noopener">Toko Resmi ↗</a></nav>
+  </div>
+  <div class="copyright"><span>© <span id="year"></span> TemaniBelajar.id</span><span>Menemani belajar anak dengan hati.</span></div>
+ </div>
+</footer>
 <script>
-const productsUrl='/products.json';let products=[];
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const rupiah=v=>{const n=Number(String(v??'0').replace(/\D/g,''));return 'Rp'+n.toLocaleString('id-ID')};
-const toneFor=p=>{const c=(p.category||'').toLowerCase();if(c.includes('bahasa arab'))return 1;if(c.includes('bahasa inggris'))return 2;if(c.includes('matematika'))return 3;if(c.includes('bundle'))return 4;if(c.includes('digital'))return 2;return 0};
-const markFor=p=>{const c=(p.category||'').toLowerCase();if(c.includes('arab'))return 'ع';if(c.includes('inggris'))return 'A–Z';if(c.includes('matematika'))return '1+1';if(c.includes('bundle'))return 'TB';if(c.includes('digital'))return '↗';if(c.includes('worksheet'))return '✳';return '✎'};
-function productCard(p,i,featured=false){const tone=toneFor(p),title=esc(p.title),url=esc(p.url||'https://lynk.id/temanibelajarid');return `<article class="product-card"><a class="product-art" data-tone="${tone}" href="${url}" target="_blank" rel="noopener" aria-label="Lihat ${title}"><span class="art-kicker">${esc(p.eyebrow||'TEMANIBELAJAR')}</span><span class="art-mark">${esc(markFor(p))}</span><span class="art-title">${title}</span></a><div class="product-info"><div class="product-category">${esc(p.category||'Koleksi')}</div><h3>${title}</h3><div class="price-line">${rupiah(p.price)} ${p.old_price?`<del>${rupiah(p.old_price)}</del>`:''}</div><a class="product-link" href="${url}" target="_blank" rel="noopener"><span>Lihat detail & beli</span><span>↗</span></a></div></article>`}
-function populateFilters(){const cats=[...new Set(products.map(p=>p.category).filter(Boolean))].sort();const grades=[...new Set(products.map(p=>p.grade).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'id'));document.querySelector('#categoryFilter').innerHTML='<option value="">Semua kategori</option>'+cats.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('');document.querySelector('#gradeFilter').innerHTML='<option value="">Semua kelas/tema</option>'+grades.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join('')}
-function renderAll(){const q=document.querySelector('#searchInput').value.trim().toLowerCase(),cat=document.querySelector('#categoryFilter').value,grade=document.querySelector('#gradeFilter').value;const filtered=products.filter(p=>(!q||`${p.title} ${p.category} ${p.grade} ${p.description||''}`.toLowerCase().includes(q))&&(!cat||p.category===cat)&&(!grade||p.grade===grade));document.querySelector('#productGrid').innerHTML=filtered.map((p,i)=>productCard(p,i)).join('');document.querySelector('#productCount').textContent=`${filtered.length} dari ${products.length} produk`;document.querySelector('#emptyState').classList.toggle('hidden',filtered.length>0)}
-(async()=>{try{const r=await fetch(productsUrl,{cache:'no-store'});if(!r.ok)throw Error('products.json tidak ditemukan');products=await r.json();if(!Array.isArray(products))throw Error('Format katalog tidak valid');const featuredIndexes=[2,7,10,11];const selected=featuredIndexes.map(i=>products[i]).filter(Boolean);document.querySelector('#featuredGrid').innerHTML=selected.map((p,i)=>productCard(p,i,true)).join('');populateFilters();renderAll();}catch(e){document.querySelector('#featuredGrid').innerHTML='<p class="empty">Katalog belum dapat dimuat. Silakan kunjungi toko resmi Lynk.id.</p>';document.querySelector('#productCount').textContent='Katalog belum tersedia';console.error(e)}})();
-['searchInput','categoryFilter','gradeFilter'].forEach(id=>document.getElementById(id).addEventListener(id==='searchInput'?'input':'change',renderAll));
-document.querySelectorAll('[data-filter-cat]').forEach(a=>a.addEventListener('click',()=>{const cat=a.dataset.filterCat;setTimeout(()=>{const sel=document.querySelector('#categoryFilter');sel.value=[...sel.options].some(o=>o.value===cat)?cat:'';renderAll()},0)}));
-const menu=document.querySelector('#mobileNav');document.querySelector('#menuBtn').addEventListener('click',()=>{menu.hidden=!menu.hidden});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.hidden=true));
+const menuBtn=document.getElementById('menuBtn');
+const mobileNav=document.getElementById('mobileNav');
+menuBtn.addEventListener('click',()=>{const open=mobileNav.hidden;mobileNav.hidden=!open;menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.hidden=true;menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-</body></html>
+</body>
+</html>
