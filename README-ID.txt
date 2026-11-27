@@ -1,27 +1,30 @@
-PAKET WEBSITE TEMANIBELAJAR — NETLIFY + PAGES CMS
+TEMANIBELAJAR.ID — PAKET HOMEPAGE
 
 ISI PAKET
-- index.html: homepage
-- assets/: logo dan ilustrasi hero
-- content/products.json: katalog produk yang dapat diedit melalui Pages CMS
-- content/site.json: logo, gambar utama, dan teks hero yang dapat diedit melalui Pages CMS
+- index.html: homepage responsif
+- logo.png: logo bulat sementara
+- hero.png: visual hero tanpa teks/manusia/hewan
+- products.json: katalog 20 produk
+- site.json: pengaturan judul, deskripsi, logo, dan hero
 - .pages.yml: konfigurasi Pages CMS
 - netlify.toml: konfigurasi publish Netlify
 
-CARA UPLOAD KE GITHUB
-1. Ekstrak ZIP ini di komputer.
-2. Buka repository GitHub temanibelajarid-creator/temanibelajar-website.
-3. Add file > Upload files.
-4. Upload SELURUH ISI folder ini (bukan folder induknya), termasuk file tersembunyi .pages.yml.
-5. Commit changes ke branch main.
-6. Kembali ke Netlify dan lanjutkan deploy/import.
+UPLOAD KE GITHUB
+1. Ekstrak ZIP.
+2. Buka repository temanibelajarid-creator/temanebelajar-website.
+3. Upload seluruh isi folder ini ke root repository (termasuk .pages.yml).
+4. Commit ke branch main.
+5. Pastikan Netlify terhubung ke repository dan branch main, lalu tunggu deploy.
 
-PENTING TENTANG CMS
-CMS yang dipakai adalah Pages CMS (pagescms.org), yang mengedit file di GitHub. Setelah repository dihubungkan dan akses diberikan di Pages CMS, perubahan pada content/products.json akan memicu deploy Netlify otomatis jika integrasi Git Netlify aktif. Halaman admin dikelola di situs Pages CMS, bukan /admin di domain sendiri.
+CMS
+1. Buka https://app.pagescms.org dan masuk dengan GitHub.
+2. Berikan akses Pages CMS ke repository website.
+3. Pilih repository temanibelajarid-creator/temanebelajar-website.
+4. Pages CMS membaca .pages.yml untuk menampilkan Katalog Produk dan Pengaturan Homepage.
+5. Perubahan yang disimpan ke GitHub akan memicu deploy Netlify jika integrasi Git aktif.
 
 CATATAN
-- Logo brand dan ilustrasi utama disimpan di assets/.
-- Produk awal mengikuti 20 item yang terlihat di toko Lynk.id saat pengecekan.
-- Harga disimpan sebagai angka tanpa Rp/titik.
-- Untuk mengganti gambar cover, upload gambar ke assets/ melalui GitHub atau Pages CMS, lalu isi path gambar seperti /assets/nama-gambar.png pada kolom Gambar cover.
-- Jangan masukkan password, token, atau rahasia ke file website.
+- Logo saat ini adalah konsep sementara; ganti logo.png setelah logo final Canva siap.
+- Gambar hero menggunakan hero.png. Copy judul dan deskripsi tetap berupa teks HTML agar mudah disunting dan responsif.
+- Harga produk berupa angka dengan pemisah ribuan opsional, tanpa awalan Rp.
+- Tautan pembelian mengarah ke Lynk.id.
